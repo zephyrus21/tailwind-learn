@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="text-gray-600 bg-gray-100">
-    <div>
-        <div>
+<body class="text-gray-600">
+    <div class="grid md:grid-cols-3">
+        <div class="md:col-span-1">
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-1">
@@ -35,69 +35,86 @@
                 </ul>
             </nav>
         </div>
-        <main class="px-16 py-6">
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
             <div class="flex justify-center md:justify-end">
-                <a class="text-primary" href="#">Log in</a>
-                <a class="text-primary" href="#">Sign up</a>
+                <a class="btn border-primary md:border-2 text-primary" href="#">Log in</a
+          >
+          <a class="btn border-primary md:border-2 text-primary ml-2" href="#"
+            >Sign up</a
+          >
+        </div>
+
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl font-semibold">For Coders</h3>
+        </header>
+
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
+
+          <div class="mt-8 grid lg:grid-cols-3 gap-8">
+            <!-- cards go here -->
+            <div class="card">
+              <img
+                src="img/stew.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">5 Bean Chili Stew</span>
+                <span class="block text-sm text-gray-500">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <span>25 min</span>
+              </div>
             </div>
-
-            <header>
-                <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-                <h3 class="text-2xl font-semibold">For Coders</h3>
-            </header>
-
-            <div>
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
-                    Latest Recipes
-                </h4>
-
-                <div class="mt-8">
-                    <!-- cards go here -->
-                    <div class="card">
-                        <img src="img/stew.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover" />
-                        <div class="m-4">
-                            <span class="font-bold">5 Bean Chili Stew</span>
-                            <span class="block text-sm text-gray-500">Recipe by Mario</span>
-                        </div>
-                        <div class="badge">
-                            <span>25 min</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/curry.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover" />
-                        <div class="m-4">
-                            <span class="font-bold">Masala Curry</span>
-                            <span class="block text-sm text-gray-500">Recipe by Anita</span>
-                        </div>
-                        <div class="badge">
-                            <span>35 min</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/noodles.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover" />
-                        <div class="m-4">
-                            <span class="font-bold">Chow Noodles</span>
-                            <span class="block text-sm text-gray-500">Recipe by Ching</span>
-                        </div>
-                        <div class="badge">
-                            <span>15 min</span>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
-                    Most Popular
-                </h4>
-
-                <div class="mt-8">
-                    <!-- cards go here -->
-                </div>
+            <div class="card">
+              <img
+                src="img/curry.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Masala Curry</span>
+                <span class="block text-sm text-gray-500">Recipe by Anita</span>
+              </div>
+              <div class="badge">
+                <span>35 min</span>
+              </div>
             </div>
-            <div class="flex justify-center">
-                <div class="bg-secondary-100 text-secondary-200 text">Load more</div>
+            <div class="card">
+              <img
+                src="img/noodles.jpg"
+                alt="stew"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Chow Noodles</span>
+                <span class="block text-sm text-gray-500">Recipe by Ching</span>
+              </div>
+              <div class="badge">
+                <span>15 min</span>
+              </div>
             </div>
-        </main>
+          </div>
+
+          <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            Most Popular
+          </h4>
+
+          <div class="mt-8">
+            <!-- cards go here -->
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="btn bg-secondary-100 text-secondary-200 text">
+            Load more
+          </div>
+        </div>
+      </main>
     </div>
-</body>
-
+  </body>
 </html>
